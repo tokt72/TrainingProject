@@ -1,4 +1,4 @@
-package tasks.task01;
+package tasks.task01_to_07;
 
 public class JavaBasicThree {
 

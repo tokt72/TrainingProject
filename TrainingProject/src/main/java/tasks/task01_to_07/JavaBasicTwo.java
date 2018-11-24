@@ -1,6 +1,4 @@
-package tasks.task01;
-
-import java.io.IOException;
+package tasks.task01_to_07;
 
 public class JavaBasicTwo {
 
