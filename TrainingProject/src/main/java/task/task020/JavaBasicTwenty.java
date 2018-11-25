@@ -1,8 +1,8 @@
 package task.task020;
 
 /*
-    1. инициализировать переменную
-    2. присвоить ей значение(считывание с клавиатуры строки, преобразование в int)
+    1. инициализировать переменные decNum
+    2. присвоить decNum значение(считывание с клавиатуры строки, преобразование в int)
     3. написать метод который преобразовывает числа из десятиричной системы счисления в шестнадцатиричную
  */
 
@@ -15,21 +15,21 @@ public class JavaBasicTwenty {
 
     public static void main(String args[]) throws IOException {
 
-        int decNum, rem;
+        int decNum, tempResult;
         String hexdecNum = "";
 
         char hex[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.print("Input a decimal number: ");
+        System.out.print("Введите номер в дестяичнной системе счисления: ");
         decNum = Integer.parseInt(br.readLine());
 
         while (decNum > 0) {
-            rem = decNum % 16;
-            hexdecNum = hex[rem] + hexdecNum;
+            tempResult = decNum % 16;
+            hexdecNum = hex[tempResult] + hexdecNum;
             decNum = decNum / 16;
         }
-        System.out.print("Hexadecimal number is : " + hexdecNum + "\n");
+        System.out.print("Шестнадцатиричный номер: " + hexdecNum);
     }
 }
