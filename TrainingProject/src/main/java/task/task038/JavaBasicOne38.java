@@ -1,15 +1,23 @@
 package task.task038;
 
+/**
+ * 1. Инициализировать символьный массив
+ * 2. Реализовать запись значений в этот массив
+ * с клавиатуры(перобразовать записываемое значение в из String в Char)
+ * 3. Инициализировать переменные
+ *
+ */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class JavaBasicThirtyEight {
+public class JavaBasicOne38 {
 
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        JavaBasicThirtyEight javaBasicThirtyEight = new JavaBasicThirtyEight();
+        JavaBasicOne38 javaBasicThirtyEight = new JavaBasicOne38();
 
         String test = br.readLine();
         javaBasicThirtyEight.countValue(test);
