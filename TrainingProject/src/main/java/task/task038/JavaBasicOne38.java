@@ -5,22 +5,24 @@ package task.task038;
  * 2. Реализовать запись значений в этот массив
  * с клавиатуры(перобразовать записываемое значение в из String в Char)
  * 3. Инициализировать переменные
- *
  */
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+
 public class JavaBasicOne38 {
 
     public static void main(String[] args) throws IOException {
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         JavaBasicOne38 javaBasicThirtyEight = new JavaBasicOne38();
 
-        String test = br.readLine();
-        javaBasicThirtyEight.countValue(test);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String text = br.readLine();
+
+        javaBasicThirtyEight.countValue(text);
 
     }
 
