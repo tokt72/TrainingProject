@@ -26,7 +26,7 @@ public class JavaBasicOne38 {
 
     }
 
-    public void countValue(String text) {
+    private void countValue(String text) {
 
         char[] value = text.toCharArray();
 
