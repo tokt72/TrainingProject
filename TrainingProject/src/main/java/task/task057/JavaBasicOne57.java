@@ -23,7 +23,7 @@ public class JavaBasicOne57 {
         javaBasicOne57.getFactorsNumber(value);
 
     }
-        //TODO to discuss this task 
+        //TODO to discuss this task
     private int getFactorsNumber(int value) {
 
         return value;
