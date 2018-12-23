@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
 public class JavaBasicOne58 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
+        System.out.println("Input a String: ");
         String text = br.readLine();
         JavaBasicOne58 javaBasicOne58 = new JavaBasicOne58();
         System.out.println(javaBasicOne58.toUpperCaseForFirstLetter(text));
