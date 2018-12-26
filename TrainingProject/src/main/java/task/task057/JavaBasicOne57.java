@@ -2,8 +2,8 @@ package task.task057;
 
 
 /* 1. Инициализировать переменную типа int которая принимает ввод с клавиатуры
- *  2. Написать метод который принимает на вход int, который раскладывает
- *  принятое число на факторы()????
+ *  2. Написать метод который принимает на вход int, и раскладывает
+ *  принятое число на множители
  * */
 
 import java.io.BufferedReader;
@@ -20,12 +20,17 @@ public class JavaBasicOne57 {
         int value = Integer.parseInt(br.readLine());
 
         JavaBasicOne57 javaBasicOne57 = new JavaBasicOne57();
-        javaBasicOne57.getFactorsNumber(value);
+        System.out.println(javaBasicOne57.getFactorsNumber(value));
 
     }
-        //TODO to discuss this task
-    private int getFactorsNumber(int value) {
 
-        return value;
+    private int getFactorsNumber(int value) {
+        int count = 0;
+        for (int i = 1; i <= value; ++i) {
+            if (value % i == 0) {
+                count++;
+            }
+        }
+        return count;
     }
 }
